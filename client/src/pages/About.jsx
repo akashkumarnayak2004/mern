@@ -9,7 +9,7 @@ const About = () => {
       <div className="flex flex-col md:flex-row items-center justify-between gap-10">
         {/* Text Section */}
         <div className="w-full md:w-1/2 space-y-4 text-center md:text-left">
-          <h1 className="text-4xl font-bold text-blue-700">Welcome to Thapa Technical</h1>
+          <h1 className="text-4xl font-bold text-blue-700">Welcome </h1>
 {/*           <p>Welcome {user.username}</p> */}
           <h2 className="text-2xl font-semibold text-gray-800">Why Choose Us?</h2>
           
