@@ -4,7 +4,7 @@ const Service = () => {
   const [services, setServices] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/data/service') // replace with your backend URL
+    fetch(`${API}/api/data/service`) // replace with your backend URL
       .then(res => res.json())
       .then(data => setServices(data.msg))
       .catch(err => console.log('Error fetching services:', err));
