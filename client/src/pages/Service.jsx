@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useAuth } from '../store/auth' 
 const Service = () => {
   const [services, setServices] = useState([]);
-
+const { API } = useAuth(); 
   useEffect(() => {
     fetch(`${API}/api/data/service`) // replace with your backend URL
       .then(res => res.json())
