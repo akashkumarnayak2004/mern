@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 // import { useAuth } from '../store/auth' 
 const About = () => {
-  const { user } = useAuth(); // Accessing user from AuthContext
+  // const { user } = useAuth(); // Accessing user from AuthContext
   return (
         
     <div className="p-4 md:p-10">
