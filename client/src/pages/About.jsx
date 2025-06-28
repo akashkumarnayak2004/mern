@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { useAuth } from '../store/auth' 
+// import { useAuth } from '../store/auth' 
 const About = () => {
   const { user } = useAuth(); // Accessing user from AuthContext
   return (
@@ -10,7 +10,7 @@ const About = () => {
         {/* Text Section */}
         <div className="w-full md:w-1/2 space-y-4 text-center md:text-left">
           <h1 className="text-4xl font-bold text-blue-700">Welcome to Thapa Technical</h1>
-          <p>Welcome {user.username}</p>
+{/*           <p>Welcome {user.username}</p> */}
           <h2 className="text-2xl font-semibold text-gray-800">Why Choose Us?</h2>
           
           <p className="text-gray-700">We bring years of expertise to deliver modern, scalable, and efficient digital solutions.</p>
