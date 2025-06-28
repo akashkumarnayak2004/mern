@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
+import { useAuth } from '../store/auth' 
 const Service = () => {
   const [services, setServices] = useState([]);
 
