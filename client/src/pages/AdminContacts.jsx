@@ -4,6 +4,7 @@ const AdminContacts = () => {
   const [contactData, setContactData] = useState([]);
 
   const getAllUsersContact = async () => {
+    const {  API } = useAuth();
     try {
       const token = localStorage.getItem("token");
       const response = await fetch(`${API}/api/admin/contacts`, {
