@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { useAuth } from '../store/auth';
 const AdminContacts = () => {
   const [contactData, setContactData] = useState([]);
-
+  const {  API } = useAuth();
   const getAllUsersContact = async () => {
-    const {  API } = useAuth();
+ 
     try {
       const token = localStorage.getItem("token");
       const response = await fetch(`${API}/api/admin/contacts`, {
